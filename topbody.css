@@ -1,0 +1,21 @@
+body{
+  margin: 0 auto;
+}
+
+#top-body{
+  background-color:  #d6e8c5;
+}
+
+.top-container{
+  display: flex;
+  width: 100%;
+  height: 600px;
+  border-bottom: 1px solid #4D3635;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-content{
+  color:white;
+  text-align: center;
+}

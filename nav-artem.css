@@ -1,0 +1,303 @@
+body {
+  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+
+}
+
+.nav-links {
+  display: flex;
+}
+.nav-item {
+  list-style-type: none;
+  padding: 0 10px;
+}
+.logo {
+  height: 86px;
+}
+
+
+.wrapper{
+
+  position: relative;
+  top: 4vh;
+  left: 25vw;
+  transform: translate(-50%, -50%);
+}
+
+.link_wrapper{
+  position: relative;
+}
+
+a{
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #1EC322;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #1EC322;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #1EC322;
+  transition: all .35s;
+}
+
+a:hover{
+  width: 200px;
+  border: 3px solid #1EC322;
+  background: transparent;
+  color: #1EC322;
+}
+
+a:hover + .icon{
+  border: 3px solid #1EC322;
+  right: -25%;
+}
+
+/* <!-- bottom-body -- Mat --> */
+.service-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.carousel {
+  position: relative;
+}
+
+.recipe-item {
+  width: 33%;
+  
+}
+
+/* //ashley */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-container> span:first-child{
+  background-color: #63D667;
+}
+.flex-container > span{
+  background-color: #21C322;
+  width: 25%;
+  height: 300px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center
+  }
+
+  /* pablo call to action
+   */
+   .call-to-action{
+    background: white;
+    width: 100%;
+    height: 570px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.call-to-action h1{
+    width: 80%;
+    font-family: 'Avenir';
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    font-weight: 200;
+}
+
+.call-to-action p{
+    width: 80%;
+    font-size: 18px;
+    font-family: 'Avenir';
+    text-align: center;
+    color: black;
+}
+
+.call-to-action button{
+    background: #1ec322 ; 
+    width: 187px;
+    height: 48px;
+    margin: 20px 0px 0px 0px;
+    border: none;
+    font-size: 18px;
+    font-weight: 200; 
+    color: white;
+}
+
+/* mat carousel */
+.service-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.carousel {
+  width: 100vw;
+  position: relative;
+}
+
+.group-item {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.group-item:last-child {
+  /* left: 100%; */
+}
+
+.left {
+  height: 10%;
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right {
+  height: 10%;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.recipe-item {
+  width: 33%;
+  height: 100%;
+  background: #999;
+  /* border: 1px solid black; */
+}
+
+.recipe-item {
+  background-size: cover;
+  background-repeat: none;
+}
+
+.burger {
+  background-image: url(images/AVOBURGER.jpg);
+}
+
+.ice-cream {
+  background-image: url(images/ice-cream.jpg);
+}
+.appetizer {
+  background-image: url(images/appetizer-avocado-bread-566566.jpg);
+}
+
+/* andre footer */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: rgb(75, 74, 74);
+  height: 700px;
+}
+footer > h2{
+  padding-top: 100px;
+  font-size: 2.8em;
+  margin-bottom: 5px;
+}
+footer > p{
+  width: 700px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 1.1em;
+}
+#form-div > form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 600px;
+}
+#each-form > div{
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#each-form > div > input{
+  padding: 14px;
+  margin: 10px;
+  width: 220px;
+}
+#submit{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:52px;
+  font-size:1.2em;
+  padding:0 1.9em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  width: 200px;
+  margin-top: 30px;
+}
+#submit:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+#submit:before,#submit:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+#submit:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#submit:hover:before,#submit:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
