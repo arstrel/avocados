@@ -88,32 +88,38 @@
       </section>
     <!-- footer -- Andre -->
     <footer>
-        <h2>WANT THESE RECIPES?</h2>
+        <h1>WANT THESE RECIPES?</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Nulla sapien massa, bibendum euismod odio id, facilisis dignissim lorem. 
+          Nulla sapien massa, bibendum euismod odio <br> id, facilisis dignissim lorem. 
           Nullam et velit nibh.</p>
-        <div id="form-div">
           <form id="main-form">
-              <div>
-              FIRST NAME<br>
-              <input type="text" placeholder="FIRST NAME"><br>
-            </div>
-            <div>
-              LAST NAME<br>
-              <input type="text" placeholder="LAST NAME"><br>
-            </div>
-            <div>
-              E-MAIL ADDRESS<br>
-              <input type="text" placeholder="E-MAIL ADDRESS"><br>
-            </div>
-            <div>
-              PHONE NUMBER<br>
-              <input type="text" placeholder="PHONE NUMBER"><br>
-            </div>
+
+              <div class="containers">
+                <div class="input-container">
+                    <label>FIRST NAME</label>
+                    <input type="text" placeholder="FIRST NAME">
+                </div>
+                <div class="input-container">
+                    <label>LAST NAME</label>
+                    <input type="text" placeholder="LAST NAME">
+                </div>
+              </div>
+
+              <div class="containers">
+                  <div class="input-container">
+                      <label>E-MAIL ADDRESS</label>
+                      <input type="text" placeholder="E-MAIL ADDRESS">
+                  </div>
+                  <div class="input-container"> 
+                      <label>PHONE NUMBER</label>
+                      <input type="text" placeholder="PHONE NUMBER">
+                  </div>
+              </div>
+
           </form>
-        </div>
         <button id="submit">GET RECIPIES</button>
       </footer>
+      <div class="btn-black"></div>
 </body>
 <script type="text/javascript" src="script.js"></script>
 </html>
