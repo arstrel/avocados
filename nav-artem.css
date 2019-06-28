@@ -35,8 +35,8 @@ body {
 
 a{
   display: inline-block;
-  width: 250px;
-  height: 50px;
+  width: 190px;
+  height: 45px;
   line-height: 50px;
   font-weight: bold;
   text-decoration: none;
@@ -107,21 +107,21 @@ a:hover + .icon{
   align-items: center;
   width: 100%;
 }
-
-.flex-container> span:first-child{
-  background-color: #63D667;
-}
 .flex-container > span{
-  background-color: #21C322;
+  text-transform: uppercase;
+  color: white;
+  background-color: #212428;
   width: 25%;
   height: 300px;
   text-align: center;
-  line-height: 75px;
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-content: center;
-  align-items: center
+  align-items: center;
+  border: 2px solid white;
+  background-image: url("images/avo-skin.png");
+  
   }
 
   /* pablo call to action
@@ -183,11 +183,9 @@ a:hover + .icon{
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: black;
 }
 
-.group-item:last-child {
-  /* left: 100%; */
-}
 
 .left {
   height: 10%;
@@ -195,6 +193,7 @@ a:hover + .icon{
   left: 3%;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 2;
 }
 .right {
   height: 10%;
@@ -202,19 +201,25 @@ a:hover + .icon{
   right: 3%;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 2;
 }
 
 .recipe-item {
-  width: 33%;
+  transition: opacity .33s ease-in;
+  width: 33.3%;
   height: 100%;
   background: #999;
+  opacity: 0.5;
   /* border: 1px solid black; */
-}
-
-.recipe-item {
   background-size: cover;
   background-repeat: none;
 }
+
+.recipe-item:hover {
+  opacity: 1;
+}
+
+
 
 .burger {
   background-image: url(images/AVOBURGER.jpg);
